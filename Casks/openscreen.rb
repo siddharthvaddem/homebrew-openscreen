@@ -3,13 +3,13 @@ cask "openscreen" do
 
   on_arm do
     sha256 "0914ac10d9c1c0ef143eb8bbca7c3491f253e965b6312bbddeb9bfd1c3ee3122"
-    url "https://github.com/siddharthvaddem/openscreen/releases/download/v#{version}/Openscreen-mac-installer.dmg",
-        verified: "github.com/siddharthvaddem/openscreen/"
+
+    url "https://github.com/siddharthvaddem/openscreen/releases/download/v#{version}/Openscreen-mac-installer.dmg"
   end
   on_intel do
     sha256 "cdccf6da3a2cce4ed3666bb0c3f66003126f4a641cd6a56b7845b5906207b091"
-    url "https://github.com/siddharthvaddem/openscreen/releases/download/v#{version}/Openscreen-Mac-x64-Installer.dmg",
-        verified: "github.com/siddharthvaddem/openscreen/"
+
+    url "https://github.com/siddharthvaddem/openscreen/releases/download/v#{version}/Openscreen-Mac-x64-Installer.dmg"
   end
 
   name "Openscreen"
