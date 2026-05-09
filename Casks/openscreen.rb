@@ -3,12 +3,13 @@ cask "openscreen" do
 
   on_arm do
     sha256 "0914ac10d9c1c0ef143eb8bbca7c3491f253e965b6312bbddeb9bfd1c3ee3122"
-    url "https://github.com/siddharthvaddem/openscreen/releases/download/v1.4.0/Openscreen-mac-installer.dmg"
+    url "https://github.com/siddharthvaddem/openscreen/releases/download/v#{version}/Openscreen-mac-installer.dmg",
+        verified: "github.com/siddharthvaddem/openscreen/"
   end
-
   on_intel do
     sha256 "cdccf6da3a2cce4ed3666bb0c3f66003126f4a641cd6a56b7845b5906207b091"
-    url "https://github.com/siddharthvaddem/openscreen/releases/download/v1.4.0/Openscreen-Mac-x64-Installer.dmg"
+    url "https://github.com/siddharthvaddem/openscreen/releases/download/v#{version}/Openscreen-Mac-x64-Installer.dmg",
+        verified: "github.com/siddharthvaddem/openscreen/"
   end
 
   name "Openscreen"
@@ -22,9 +23,9 @@ cask "openscreen" do
 
   zap trash: [
     "~/Library/Application Support/Openscreen",
-    "~/Library/Preferences/com.siddharthvaddem.openscreen.plist",
-    "~/Library/Logs/Openscreen",
     "~/Library/Caches/com.siddharthvaddem.openscreen",
+    "~/Library/Logs/Openscreen",
+    "~/Library/Preferences/com.siddharthvaddem.openscreen.plist",
     "~/Library/Saved Application State/com.siddharthvaddem.openscreen.savedState",
   ]
 end
