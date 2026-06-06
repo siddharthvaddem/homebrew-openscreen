@@ -1,15 +1,15 @@
 cask "openscreen" do
-  version "1.4.0"
+  version "1.5.0"
 
   on_arm do
-    sha256 "0914ac10d9c1c0ef143eb8bbca7c3491f253e965b6312bbddeb9bfd1c3ee3122"
+    sha256 "bf2e3cdb25d1d5d71217992c91852598463a9db303ceb2639cb91094fedb9975"
 
-    url "https://github.com/siddharthvaddem/openscreen/releases/download/v#{version}/Openscreen-mac-installer.dmg"
+    url "https://github.com/siddharthvaddem/openscreen/releases/download/v#{version}/Openscreen-Mac-arm64-.dmg"
   end
   on_intel do
-    sha256 "cdccf6da3a2cce4ed3666bb0c3f66003126f4a641cd6a56b7845b5906207b091"
+    sha256 "f00d2763a2317512b8403eb32def8888d4511ce24187cdc6d1ee722fa9aa5b3c"
 
-    url "https://github.com/siddharthvaddem/openscreen/releases/download/v#{version}/Openscreen-Mac-x64-Installer.dmg"
+    url "https://github.com/siddharthvaddem/openscreen/releases/download/v#{version}/Openscreen-Mac-x64-.dmg"
   end
 
   name "Openscreen"
