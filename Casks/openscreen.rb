@@ -17,7 +17,7 @@ cask "openscreen" do
   homepage "https://github.com/siddharthvaddem/openscreen"
 
   auto_updates false
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "Openscreen.app"
 
